@@ -1,0 +1,403 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+
+}
+
+/*Ocultar barra de desplazamiento*/
+* {
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+/*general*/
+
+
+
+/*card*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    padding: 3%;
+    border-radius: 3%;
+
+}
+
+.card img {
+    justify-content: center;
+    width: 11.7022vw;
+    height: 18.6176vh;
+}
+
+.card h3 {
+    font-size: 1.6385vw;
+    font-size: 2.6067vh;
+}
+
+.card p {
+    margin-top: 3%;
+    font-size: 1.0927vw;
+    font-size: 1.736vh;
+}
+
+/*navbar*/
+
+header {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    display: flex;
+    margin-left: 8%;
+    align-items: end;
+}
+
+header h1 a {
+    white-space: nowrap;
+    color: #7a163c;
+    font-size: 1.7rem;
+
+}
+
+header nav {
+    display: flex;
+    margin-right: 8%;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 390px;
+    height: 27px;
+}
+
+
+header li a {
+    color: #7a163c;
+    font-size: 1.1rem;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+    height: 30vh;
+    width: 100%;
+    background-color: white;
+}
+
+.footer h3 a {
+    color: black;
+    font-size: 1.7rem;
+}
+
+.footer h3 {
+    margin-top: 1%;
+}
+
+.informacionBasica {
+    display: flex;
+
+}
+
+.footerInfoContacto {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.direccionYMail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    width: 37%;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    width: 37%;
+}
+
+.redesSociales div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redesSociales div a {
+    display: flex;
+    flex-direction: center;
+}
+
+.anclaTextoFooter {
+    position: relative;
+    top: 9px;
+    width: 134px;
+}
+
+footer svg {
+    width: 35px;
+    height: 35px;
+}
+
+.copyright {
+    margin-bottom: 1%;
+    color: #7a163c;
+    text-align: center;
+}
+
+
+
+
+/*index*/
+
+.indexBody {
+    background-image: url(../img/fondoIndex.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 95%;
+}
+
+.mainIndex h2 {
+    font-size: 2.3rem;
+}
+
+.subTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+    bottom: 5vh;
+}
+
+.subTitulo h2 {
+    display: flex;
+    justify-content: center;
+    color: #7a163c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.7rem;
+}
+
+.subTitulo img {
+    margin-top: 10px;
+    width: 70px;
+    height: 14px;
+}
+
+.subTitulo a {
+    display: flex;
+    justify-content: center;
+}
+
+.fundamentos {
+
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundamentos h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4%;
+    font-size: 3.7468vw;
+    font-size: 5.9593vh;
+}
+
+.gridFundamentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 8vh;
+}
+
+
+
+/*contacto*/
+
+.bodyContacto {
+    background-image: url(../img/fondoContacto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.informacionBasica p {
+    color: white;
+    font-size: 2.34vw;
+    font-size: 3.72vh;
+}
+
+.informacionBasica svg {
+    width: 50px;
+    height: 50px;
+}
+
+.quieroQueMeContacten h2 {
+    color: white;
+    font-size: 3.042vw;
+    font-size: 4.839vh;
+}
+
+.quieroQueMeContacten form {
+    background-color: black;
+    width: 35.7143%;
+    height: 37.1419%;
+}
+
+.quieroQueMeContacten label {
+    color: white;
+    font-size: 1.8726vw;
+    font-size: 2.977vh;
+}
+
+
+.quieroQueMeContacten p {
+    color: white;
+    font-size: 2.0283vw;
+    font-size: 3.2258vh;
+}
+
+.quieroQueMeContacten input {
+    font-size: 2.0283vw;
+    font-size: 3.2258vh;
+}
+
+.quieroQueMeContacten img {
+    width: 40.031%;
+    height: 39.950%;
+}
+
+
+
+
+/*galeria*/
+
+.galeriaBody {
+    background: url(../img/fondoGaleria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+/*nosotros*/
+
+.bodyNosotros {
+    background-image: url(../img/fondoIndex.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 95%;
+}
+
+.nuestraHistoria {
+    width: 41.4521%;
+    height: 79.9511%;
+}
+
+.nuestraHistoria h2 {
+    font-size: 3.7468vw;
+    font-size: 5.9593vh;
+}
+
+.nuestraHistoria p {
+    font-size: 1.8726vw;
+    font-size: 2.977vh;
+}
+
+.nuestroPersonal h2 {
+    font-size: 3.7468vw;
+    font-size: 5.9593vh;
+}
+
+
+
+
+/*servicios*/
+
+.bodyServicios {
+    background-image: url(../img/fondoServicios.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.servicioInfo {
+    margin-top: 3%;
+    height: 270vh;
+    overflow-y: hidden;
+}
+
+.tarjetaServicioInfo {
+    display: flex;
+    justify-content: space-between;
+    height: 17%;
+    margin: 3% 8% 0% 8%;
+}
+
+.tarjetaServicioInfo img {
+    object-fit: cover;
+    width: 47%;
+}
+
+.informacionEnTextoSercicio {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    
+}
+
+.informacionEnTextoSercicio h2 {
+    position: relative;
+    bottom: 7px;
+    font-size: 2.7em;
+    margin-bottom: 2%;
+    white-space: nowrap;
+
+}
+
+.servicioInfo p {
+    margin-top: 3%;
+    color: #7a163c;
+    font-size: 2em;
+}
+
+.deServicioAContacto {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 225, 255);
+    font-size: 3rem;
+    margin: 3%;
+
+}
