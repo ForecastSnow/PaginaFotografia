@@ -18,6 +18,10 @@
     scrollbar-width: none;
 }
 
+* h1,h2,h3 {
+    overflow: hidden;
+}
+
 /*navbar*/
 
 header {
@@ -34,15 +38,15 @@ header {
 #offcanvasNavbar {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    background: black;
-    background: linear-gradient(to left, rgba(128, 128, 128), transparent);
+    width: 50%;
+    background: linear-gradient(to left, rgb(212, 118, 118), transparent);
     border: 0;
 }
 
 .ulMobile li a {
-    color: #7a163c;
+    color: #ffffff;
     text-decoration: none;
+    
 }
 
 .navbar-toggler {
@@ -51,8 +55,7 @@ header {
 }
 
 .ulMobile {
-    padding: 0;
-    margin: 0%;
+    padding: 0%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -64,6 +67,7 @@ header h1 {
     display: flex;
     align-items: end;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 header h1 a {
@@ -71,7 +75,7 @@ header h1 a {
     color: #7a163c;
     font-size: 1.2rem;
     text-decoration: none;
-    margin-bottom: 0;
+    overflow: hidden;
 }
 
 .navTabletAndDesktop {
@@ -325,25 +329,30 @@ footer svg {
     opacity: 95%;
 }
 
-.nuestraHistoria {
-    width: 41.4521%;
-    height: 79.9511%;
+#nuestraHistoria {
+    margin: 0% 1% 0% 1%;
 }
 
-.nuestraHistoria h2 {
-    font-size: 3.7468vw;
-    font-size: 5.9593vh;
+#nuestraHistoria p {
+    color: white;
 }
 
-.nuestraHistoria p {
-    font-size: 1.8726vw;
-    font-size: 2.977vh;
+#nuestraHistoria h2 {
+    color: white;
 }
 
-.nuestroPersonal h2 {
-    font-size: 3.7468vw;
-    font-size: 5.9593vh;
+.bodyNosotros h2 {
+    color: rgb(140, 0, 255);
+    margin: 5% 0% 5% 0%;
+    font-size: 2rem;
 }
+
+
+
+#nuestroPersonalDesktop {
+    display: none;
+}
+
 
 /*servicios*/
 
@@ -487,7 +496,16 @@ footer svg {
         height: 440px;
     }
 
-
+    /* nosotros */
+    
+    #nuestraHistoria h2 {
+        font-size: 2.5rem;
+        margin: 5% 0% 5% 0%;
+    }
+    
+    #nuestraHistoria p {
+        font-size: 1.2rem;
+    }
 
 }
 
@@ -597,6 +615,22 @@ footer svg {
         font-size: 1.6rem;
     }
 
+    /* nosotros */
+
+    #nuestraHistoria {
+        margin: 0% 6% 0% 6%;
+    }
+    
+    #nuestraHistoria h2 {
+        margin: 0% 0% 3% 0%;
+    }
+
+    #nuestroPersonash2 {
+        margin: 3% 0% 5% 0%;
+        font-size: 2.5rem;
+    }
+
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -613,7 +647,7 @@ footer svg {
 
     .card img {
         width: 88%;
-        margin: 3% 8% 3% 8%;
+    
     }
 
     .card h3 {
@@ -692,6 +726,11 @@ footer svg {
 
     .quieroQueMeContacten input {
         font-size: 1.5rem;
+    }
+
+    #nuestroPersonalDesktop {
+        display: flex;
+        margin: 0% 6% 5% 6%;
     }
 
 }

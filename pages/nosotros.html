@@ -46,9 +46,9 @@
         </nav>
     </header>
     <main>
-        <section class="nuestraHistoria">
-            <h2>Nuestra Historia</h2>
-            <div>
+        <section class="row" id="nuestraHistoria">
+            <h2 class="d-flex justify-content-center justify-content-md-start col-12">Nuestra Historia</h2>
+            <div class="col-12 col-lg-6">
                 <p>Con más de dos décadas inmersos en el apasionante mundo de la fotografía, nuestra empresa se
                     enorgullece de contar con una vasta experiencia que se remonta al año 2001. Fundada por un
                     apasionado fotógrafo, Robert Hans hemos acumulado un conocimiento profundo y una habilidad
@@ -60,42 +60,123 @@
                     manteniendo siempre un compromiso inquebrantable con la calidad y la satisfacción del cliente.</p>
             </div>
         </section>
-        <section class="nuestroPersonal">
-            <h2>Nuestro personal</h2>
-            <div class="capsulaInfo">
-                <img src="../img/jessicaMiles.jpg" alt="jessica miles">
-                <h3>Jessica Miles</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus? <br>Illum,
-                    aliquam eius
-                    ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate, eveniet
-                    <br>repellendus?
-                    Nesciunt, dicta temporibus!
-                </p>
+
+
+        <h2 id="nuestroPersonash2" class="d-flex justify-content-center">Nuestro personal</h2>
+
+
+        <!-- carrucel para uso mobile -->
+
+        <section class="nuestroPersonalCarrucel">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="../img/jessicaMiles.jpg" alt="jessica miles">
+                            <h3>Jessica Miles</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus?
+                                <br>Illum,
+                                aliquam eius
+                                ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate,
+                                eveniet
+                                <br>repellendus?
+                                Nesciunt, dicta temporibus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="../img/robertHans.jpg" alt="robert hands">
+                            <h3>Robert Hands</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus?
+                                <br>Illum,
+                                aliquam eius
+                                ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate,
+                                eveniet
+                                <br>repellendus?
+                                Nesciunt, dicta temporibus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="../img/wilsonHans.jpg" alt="wilson hands">
+                            <h3>Wilson Hands</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus?
+                                <br>Illum,
+                                aliquam eius
+                                ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate,
+                                eveniet
+                                <br>repellendus?
+                                Nesciunt, dicta temporibus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="capsulaInfo">
-                <img src="../img/robertHans.jpg" alt="robert hands">
-                <h3>Pasion</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus? <br>Illum,
-                    aliquam eius
-                    ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate, eveniet
-                    <br>repellendus?
-                    Nesciunt, dicta temporibus!
-                </p>
+
+        </section>
+
+        <!-- fragmento que sera visible solo cuando la pantalla supere los 768px -->
+
+        <section class="row" id="nuestroPersonalDesktop">
+            <div class="col-4">
+                <div class="card">
+                    <img src="../img/jessicaMiles.jpg" alt="jessica miles">
+                    <h3>Jessica Miles</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus?
+                        <br>Illum,
+                        aliquam eius
+                        ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate,
+                        eveniet
+                        <br>repellendus?
+                        Nesciunt, dicta temporibus!
+                    </p>
+                </div>
             </div>
-            <div class="capsulaInfo">
-                <img src="../img/wilsonHans.jpg" alt="wilson hands">
-                <h3>Mision</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus? <br>Illum,
-                    aliquam eius
-                    ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate, eveniet
-                    <br>repellendus?
-                    Nesciunt, dicta temporibus!
-                </p>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../img/robertHans.jpg" alt="robert hands">
+                    <h3>Robert Hands</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus?
+                        <br>Illum,
+                        aliquam eius
+                        ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate,
+                        eveniet
+                        <br>repellendus?
+                        Nesciunt, dicta temporibus!
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../img/wilsonHans.jpg" alt="wilson hands">
+                    <h3>Wilson Hands</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Delectus, voluptatibus?
+                        <br>Illum,
+                        aliquam eius
+                        ipsum dolores <br>sequi hic est aliquid ipsa rem aperiam <br>quod impedit voluptate,
+                        eveniet
+                        <br>repellendus?
+                        Nesciunt, dicta temporibus!
+                    </p>
+                </div>
             </div>
         </section>
+
     </main>
     <footer class="footer">
-        <h3><a class="h3MasInfo" href="./pages/nosotros.html">Mas Informacion</a></h3>
+        <h3><a class="h3MasInfo" href="./contacto.html">Contacto</a></h3>
 
         <div class="footerInfoContacto">
             <div class="direccionYMail">
