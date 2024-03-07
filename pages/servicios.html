@@ -8,6 +8,10 @@
     <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
     <!-- link css-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -25,11 +29,11 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <ul class="ulMobile">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/servicios.html">Servicios</a></li>
-                        <li><a href="./pages/galeria.html">Galeria</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
                     </ul>
                 </div>
         </nav>
@@ -46,47 +50,53 @@
         </nav>
     </header>
     <main>
-        <section class="servicioInfo">
+        
 
-            <div class="tarjetaServicioInfo">
-                <img src="../img/fotografoSelva.jpg" alt="fotografo en selva">
-                <div class="informacionEnTextoSercicio">
+        <section class="container-fluid" id="infoServiciosSection">
+
+            <div class="contenedorServicios">
+
+                <div class="row"></div>
+                <img class="object-fit-cover col-12 col-lg-6 " src="../img/fotografoSelva.jpg" alt="fotografo en selva">
+
+                <div class="col-12 col-lg-6">
                     <h2>Fotofrafia y filmaciones versatiles</h2>
-                    <p>Somos expertos en fotografía, versátiles y adaptables a cualquier proyecto. Capturamos momentos
+                    <p>Somos expertos en fotografía, versátiles y adaptables a cualquier proyecto. Capturamos
+                        momentos
                         únicos y creamos imágenes impactantes. Nuestra creatividad y profesionalismo nos distinguen.
                         Desde
-                        eventos corporativos hasta sesiones de retratos, cubrimos una amplia gama de necesidades. Confía
+                        eventos corporativos hasta sesiones de retratos, cubrimos una amplia gama de necesidades.
+                        Confía
                         en
                         nosotros para dar vida a tus ideas con calidad y estilo.</p>
                 </div>
-            </div>
-
-            <div class="tarjetaServicioInfo">
-                <div class="informacionEnTextoSercicio">
+                <div class="col-12 col-xl-6">
                     <h2>Bodas y despedidas de soltero</h2>
                     <p>Con años de experiencia, somos especialistas en bodas. Capturamos cada momento especial con
                         elegancia
-                        y precisión. Nuestro compromiso es ofrecer un servicio excepcional, garantizando que cada pareja
+                        y precisión. Nuestro compromiso es ofrecer un servicio excepcional, garantizando que cada
+                        pareja
                         reviva su día más importante con emoción y alegría. Desde la planificación hasta la entrega
                         final.
                     </p>
                 </div>
-                <img src="../img/recienCasados.webp" alt="pareja recien casada">
-            </div>
+                <img class="col-12 col-xl-6 img-fluid" src="../img/recienCasados.webp" alt="pareja recien casada">
 
-            <div class="tarjetaServicioInfo">
-                <img src="../img/dronYMontaña.webp" alt="dron sobre montañas">
-                <div class="informacionEnTextoSercicio">
+
+
+
+                <img class="col-12 col-xl-6 img-fluid" src="../img/dronYMontaña.webp" alt="dron sobre montañas">
+                <div class="col-12 col-xl-6col-12 col-xl-6">
                     <h2>Desde el cielo. Servicio de drones</h2>
-                    <p>Expertos en tomas aéreas con drones. Capturamos vistas únicas desde arriba. Servicio profesional
+                    <p>Expertos en tomas aéreas con drones. Capturamos vistas únicas desde arriba. Servicio
+                        profesional
                         y
-                        creativo. Amplia experiencia en proyectos diversos. Perspectivas impresionantes garantizadas.
+                        creativo. Amplia experiencia en proyectos diversos. Perspectivas impresionantes
+                        garantizadas.
                         Dronografía de alta calidad. Transformamos tu visión en realidad.</p>
                 </div>
-            </div>
 
-            <div class="tarjetaServicioInfo">
-                <div class="informacionEnTextoSercicio">
+                <div class="col-12 col-xl-6">
                     <h2>Fiestas y encuentros inolvidables</h2>
                     <p>Inmortalizamos fiestas y encuentros memorables. Capturamos momentos únicos con estilo.
                         Expertos en documentar la alegría y la emoción. Cada imagen cuenta una historia inolvidable.
@@ -94,20 +104,31 @@
                         perdurable.
                         Confía en nosotros para capturar tus momentos más especiales.</p>
                 </div>
-                <img src="../img/fiestaYCohetes.jpg" alt="fuegos artificiales y gente festejando">
-            </div>
-            <div class="tarjetaServicioInfo">
-                <img src="../img/fotografaPublicitaria.jpg" alt="fotografa y taza">
-                <div class="informacionEnTextoSercicio">
+
+                <img class="col-12 col-xl-6 img-fluid" src="../img/fiestaYCohetes.jpg"
+                    alt="fuegos artificiales y gente festejando">
+
+                <img class="col-12 col-xl-6 img-fluid" src="../img/fotografaPublicitaria.jpg" alt="fotografa y taza">
+                <div class="col-12 col-xl-6">
                     <h2>Servicios publicitarios.</h2>
-                    <p>Potenciamos tu marca con creatividad impactante. Soluciones publicitarias efectivas y atractivas.
+                    <p>Potenciamos tu marca con creatividad impactante. Soluciones publicitarias efectivas y
+                        atractivas.
                         Estrategias personalizadas para destacarte. Diseños innovadores que cautivan al público.
                         Campañas
-                        que generan resultados tangibles. Experiencia probada en promoción de marcas. Confía en nosotros
+                        que generan resultados tangibles. Experiencia probada en promoción de marcas. Confía en
+                        nosotros
                         para impulsar tu negocio.</p>
                 </div>
+
             </div>
-            <a class="deServicioAContacto" href="./contacto.html">Contactenos</a>
+
+            <div class="deServicioAContacto"><button class="btn btn-primary"><a
+                        href="./contacto.html">Contactenos</a></button> </div>
+
+
+
+
+
         </section>
     </main>
     <footer class="footer">

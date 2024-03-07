@@ -11,6 +11,7 @@
 
 /*general*/
 
+
 * {
     overflow: hidden;
     overflow-y: scroll;
@@ -20,19 +21,21 @@
 /*navbar*/
 
 header {
-    height: 15vh;
+    font-size: 1.2rem;
 }
 
 .navbar {
     justify-content: space-between;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(128, 128, 128), transparent);
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), transparent);
+    height: 50px;
 }
 
 #offcanvasNavbar {
     display: flex;
     flex-direction: column;
     width: 40%;
+    background: black;
     background: linear-gradient(to left, rgba(128, 128, 128), transparent);
     border: 0;
 }
@@ -40,14 +43,6 @@ header {
 .ulMobile li a {
     color: #7a163c;
     text-decoration: none;
-}
-
-.container-fluid {
-    display: block;
-}
-
-.container-fluid h1 {
-    margin: 0%;
 }
 
 .navbar-toggler {
@@ -81,7 +76,7 @@ header h1 a {
 
 .navTabletAndDesktop {
     height: 15vh;
-    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.6), transparent);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
     display: none;
     align-items: center;
 }
@@ -98,7 +93,6 @@ header h1 a {
 
 .ulTabletAndDesktop li a {
     color: #7a163c;
-    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -155,7 +149,7 @@ footer svg {
 }
 
 .copyright {
-    margin: 3% 0% 3% 0%;
+    margin: 1% 0% 1% 0%;
     color: #7a163c;
     text-align: center;
 }
@@ -242,58 +236,75 @@ footer svg {
 
 /*contacto*/
 
+.iconoContacto {
+    width: 2.5rem;
+}
+
 .bodyContacto {
-    background-image: url(../img/fondoContacto1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url(../img/dark-paths.png);
 }
 
-.informacionBasica p {
+.informacion {
+    margin: 4%;
+}
+
+#contactoBasico {
+    display: flex;
+    justify-content: start;
+    margin: 3% 0% 3% 0%;
+}
+
+.informacion p {
     color: white;
-    font-size: 2.34vw;
-    font-size: 3.72vh;
+    position: relative;
+    top: 5px;
+    margin-left: 4%;
 }
 
-.informacionBasica svg {
-    width: 50px;
-    height: 50px;
+#redes img {
+    width: 3rem;
 }
 
-.quieroQueMeContacten h2 {
+#redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0% 5% 0%;
+}
+
+#mapaGM {
+    margin-bottom: 5%;
+}
+
+.informacion h2 {
+    display: flex;
+    justify-content: center;
     color: white;
-    font-size: 3.042vw;
-    font-size: 4.839vh;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    margin: 0% 0% 5% 0%;
 }
 
-.quieroQueMeContacten form {
-    background-color: black;
-    width: 35.7143%;
-    height: 37.1419%;
+.quieroQueMeContacten {
+    display: flex;
+    flex-direction: column;
 }
 
 .quieroQueMeContacten label {
     color: white;
-    font-size: 1.8726vw;
-    font-size: 2.977vh;
+}
+
+.quieroQueMeContacten div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
 }
 
 
-.quieroQueMeContacten p {
-    color: white;
-    font-size: 2.0283vw;
-    font-size: 3.2258vh;
+#buttonQuieroContacten {
+    background-color: #7a163c;
 }
 
-.quieroQueMeContacten input {
-    font-size: 2.0283vw;
-    font-size: 3.2258vh;
-}
-
-.quieroQueMeContacten img {
-    width: 40.031%;
-    height: 39.950%;
-}
 
 /*galeria*/
 
@@ -344,12 +355,25 @@ footer svg {
 
 }
 
-.servicioInfo {
-    margin-top: 3%;
-    height: 270vh;
-    overflow-y: hidden;
+.contenedorServicios {
+    margin: 3% 8% 0% 8%;
 }
 
+
+
+.deServicioAContacto {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn a {
+
+    color: #7a163c;
+    text-decoration: none;
+}
+
+/*
 .tarjetaServicioInfo {
     display: flex;
     justify-content: space-between;
@@ -392,14 +416,13 @@ footer svg {
     margin: 3%;
 
 }
+*/
+
+
 
 @media screen and (min-width: 520px) {
 
     /*navbar*/
-
-    .container-fluid h1 {
-        margin: 0%;
-    }
 
     .container-fluid a {
         font-size: 1.5rem;
@@ -409,10 +432,6 @@ footer svg {
 
     .footer {
         font-size: 1rem;
-    }
-
-    .footer h3 {
-        margin: 2%;
     }
 
     .footer h3 a {
@@ -440,7 +459,38 @@ footer svg {
         font-size: 1.7rem;
     }
 
+    /* contacto */
+
+    .informacion {
+        margin: 0% 10% 4% 10%;
+    }
+
+    .iconoContacto {
+        width: 4rem;
+    }
+
+    .informacion p {
+        top: 6px;
+        font-size: 1.5rem;
+    }
+
+
+    #redes img {
+        width: 5rem;
+    }
+
+    .informacion h2 {
+        font-size: 2.2rem;
+    }
+
+    #mapaGM {
+        height: 440px;
+    }
+
+
+
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -454,6 +504,7 @@ footer svg {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        height: 15vh;
     }
 
     header h1 a {
@@ -477,16 +528,15 @@ footer svg {
 
     /*footer*/
 
+    .footer h3 {
+        margin: 0.5%;
+    }
+
     .footer {
         font-size: 1.2rem;
     }
 
-    .footer h3 {
-        margin: 2%;
-    }
-
     .footer h3 a {
-
         font-size: 1.7rem;
     }
 
@@ -516,9 +566,42 @@ footer svg {
         font-size: 2rem;
     }
 
+    /* contacto */
+
+    .informacion {
+        margin: 0% 10% 4% 10%;
+    }
+
+    .iconoContacto {
+        width: 5rem;
+    }
+
+    .informacion p {
+        top: 6px;
+        font-size: 2rem;
+    }
+
+    #redes img {
+        width: 7rem;
+    }
+
+    .informacion h2 {
+        font-size: 2.8rem;
+    }
+
+    #mapaGM {
+        height: 500px;
+    }
+
+    #buttonQuieroContacten {
+        font-size: 1.6rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
+
+    /* navbar */
 
     #carouselExampleCaptions {
         display: none;
@@ -550,6 +633,67 @@ footer svg {
         margin: 0% 8% 5% 8%;
         grid-column-gap: 5%;
     }
+
+    /*footer*/
+
+    .footer h3 {
+        margin: 0.5%;
+    }
+
+    /*contacto*/
+
+    .informacion {
+        margin: 2% 0% 3% 10%;
+        width: 570px;
+    }
+
+    .iconoContacto {
+        width: 3rem;
+        height: 3rem
+    }
+
+    #contactoBasico {
+        display: flex;
+        justify-content: start;
+        margin: 3% 0% 3% 0%;
+    }
+
+    .informacion p {
+        color: white;
+        position: static;
+        margin: 0% 0% 0% 4%;
+    }
+
+    #redes img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #redes {
+        margin: 5% 0% 5% 0%;
+    }
+
+    .informacion h2 {
+        font-size: 2.5rem;
+        margin: 1% 0% 6% 0%;
+    }
+
+    #mapaGM {
+        margin-bottom: 5%;
+        height: 300px;
+    }
+
+    .quieroQueMeContacten label {
+        color: white;
+        margin-right: 3%;
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
+    .quieroQueMeContacten input {
+        font-size: 1.5rem;
+    }
+
 }
 
 
@@ -580,12 +724,7 @@ footer svg {
         font-size: 1.4rem;
     }
 
-    .footer h3 {
-        margin: 2%;
-    }
-
     .footer h3 a {
-
         font-size: 1.9rem;
     }
 
@@ -603,4 +742,34 @@ footer svg {
     .card p {
         font-size: 1.5rem;
     }
+
+    /*contacto*/
+
+    .informacion {
+        margin: 2% 0% 3% 10%;
+        width: 570px;
+    }
+
+    .iconoContacto {
+        width: 3rem;
+        height: 3rem
+    }
+
+    #redes img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .informacion h2 {
+        font-size: 3rem;
+    }
+
+    #mapaGM {
+        height: 360px;
+    }
+
+    #buttonQuieroContacten {
+        font-size: 2rem;
+    }
+
 }
