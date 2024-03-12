@@ -1,0 +1,58 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: white;
+    font-size: 0.57rem;
+
+    h3 {
+        a {
+            color: black;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 1%;
+        }
+    }
+
+    .footerInfoContacto {
+        display: flex;
+        justify-content: space-between;
+
+        .direccionYMail {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 37%;
+            margin-left: 7%;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .redesSociales {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 2% 7% 2% 0%;
+
+            .anclaTextoFooter {
+                text-decoration: none;
+            }
+
+            svg {
+                width: 20px;
+            }
+        }
+    }
+
+    .copyright {
+        margin: 1% 0% 1% 0%;
+        color: #7a163c;
+        text-align: center;
+    }
+
+
+}

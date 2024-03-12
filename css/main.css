@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+* {
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+* h1, h2, h3 {
+  overflow: hidden;
+}
+
+header {
+  font-size: 1.2rem;
+}
+header h1 {
+  display: flex;
+  align-items: end;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+header h1 a {
+  white-space: nowrap;
+  color: #7a163c;
+  font-size: 1.2rem;
+  text-decoration: none;
+  overflow: hidden;
+}
+header .navbar-toggler {
+  border: 0;
+  user-select: none;
+}
+header .navbar {
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), transparent);
+  height: 50px;
+}
+header .navbar #offcanvasNavbar {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: linear-gradient(to left, rgb(212, 118, 118), transparent);
+  border: 0;
+}
+header .navbar #offcanvasNavbar .ulMobile {
+  padding: 0%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navbar #offcanvasNavbar .ulMobile li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header .navTabletAndDesktop {
+  height: 15vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  display: none;
+  align-items: center;
+}
+header .navTabletAndDesktop .ulTabletAndDesktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  top: 3px;
+  width: 390px;
+}
+header .navTabletAndDesktop .ulTabletAndDesktop li a {
+  color: #7a163c;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid black;
+  width: 100%;
+  background-color: white;
+  font-size: 0.57rem;
+}
+footer h3 a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1%;
+}
+footer .footerInfoContacto {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerInfoContacto .direccionYMail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 37%;
+  margin-left: 7%;
+}
+footer .footerInfoContacto .direccionYMail p {
+  margin: 0;
+}
+footer .footerInfoContacto .redesSociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2% 7% 2% 0%;
+}
+footer .footerInfoContacto .redesSociales .anclaTextoFooter {
+  text-decoration: none;
+}
+footer .footerInfoContacto .redesSociales svg {
+  width: 20px;
+}
+footer .copyright {
+  margin: 1% 0% 1% 0%;
+  color: #7a163c;
+  text-align: center;
+}
+
+.indexBody {
+  background-image: url(../img/fondoIndex.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bodyContacto {
+  background-image: url(../img/dark-paths.png);
+}
+
+.bodyNosotros {
+  background-image: url(../img/fondoIndex.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 95%;
+}
+
+.mainIndex .subTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 85vh;
+  width: 100vw;
+  position: relative;
+  bottom: 5vh;
+}
+.mainIndex .subTitulo h2 {
+  display: flex;
+  justify-content: center;
+  color: #7a163c;
+  font-family: "Times New Roman", Times, serif;
+}
+.mainIndex .subTitulo a {
+  display: flex;
+  justify-content: center;
+}
+.mainIndex .subTitulo a img {
+  margin-top: 10px;
+  width: 70px;
+  height: 14px;
+}
+.mainIndex .fundamentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mainIndex .fundamentos h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: black;
+  overflow: hidden;
+}
+.mainIndex .fundamentos #carouselExampleCaptions {
+  margin: 3% 5% 8% 5%;
+}
+.mainIndex .fundamentos #carouselExampleCaptions .card {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.mainIndex .fundamentos #carouselExampleCaptions .card img {
+  margin: 3% 8% 5% 8%;
+}
+.mainIndex .fundamentos #carouselExampleCaptions .card h3 {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.mainIndex .fundamentos #carouselExampleCaptions .card p {
+  margin: 0% 5% 5% 5%;
+}
+.mainIndex .gridFundamentosDesktop {
+  display: none;
+}
+
+.mainContacto .informacion {
+  margin: 4%;
+}
+.mainContacto .informacion .row #contactoBasico {
+  display: flex;
+  justify-content: start;
+  margin: 3% 0% 3% 0%;
+}
+.mainContacto .informacion .row #contactoBasico .iconoContacto {
+  width: 2.5rem;
+}
+.mainContacto .informacion .row #contactoBasico p {
+  color: white;
+  position: relative;
+  top: 5px;
+  margin-left: 4%;
+}
+.mainContacto .informacion .row #redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5% 0% 5% 0%;
+}
+.mainContacto .informacion .row #redes img {
+  width: 3rem;
+}
+.mainContacto .informacion .row h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  margin: 0% 0% 5% 0%;
+}
+.mainContacto .informacion .row #mapaGM {
+  margin-bottom: 5%;
+}
+.mainContacto .informacion h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  margin: 0% 0% 5% 0%;
+}
+.mainContacto .informacion .quieroQueMeContacten {
+  display: flex;
+  flex-direction: column;
+}
+.mainContacto .informacion .quieroQueMeContacten div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+}
+.mainContacto .informacion .quieroQueMeContacten div label {
+  color: white;
+}
+.mainContacto .informacion .quieroQueMeContacten div #buttonQuieroContacten {
+  background-color: #7a163c;
+}
+
+.mainNosotros #nuestraHistoria {
+  margin: 0% 1% 0% 1%;
+}
+.mainNosotros #nuestraHistoria h2 {
+  color: white;
+}
+.mainNosotros #nuestraHistoria p {
+  color: white;
+}
+.mainNosotros #nuestroPersonalH2 {
+  color: rgb(140, 0, 255);
+  margin: 5% 0% 5% 0%;
+  font-size: 2rem;
+}
+.mainNosotros .nuestroPersonalCarrusel {
+  margin: 0% 3% 3% 3%;
+}
+.mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .carousel-item .card {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .carousel-item .card img {
+  margin: 3% 3% 5% 3%;
+  border-radius: 2%;
+}
+.mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .carousel-item .card h3 {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .carousel-item .card p {
+  margin: 0% 5% 5% 5%;
+}
+.mainNosotros #nuestroPersonalDesktop {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

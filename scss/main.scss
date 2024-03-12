@@ -1,0 +1,10 @@
+@import "utilities/_reset.scss";
+@import "utilities/_globals.scss";
+@import "components/_header.scss";
+@import "components/footer";
+@import "utilities/bodyAdjustments"; //define como se comportan en general los backgrounds
+@import "pages/mainIndex";
+@import "pages/mainContacto";
+@import "pages/mainGaleria";
+@import "pages/mainNosotros";
+@import "pages/mainServicios";

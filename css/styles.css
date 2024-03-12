@@ -1,18 +1,18 @@
 /*reset*/
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     outline: none;
 
-}
+} */
 
 /*general*/
 
 
-* {
+/* * {
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -20,11 +20,11 @@
 
 * h1,h2,h3 {
     overflow: hidden;
-}
+} */
 
 /*navbar*/
 
-header {
+/* header {
     font-size: 1.2rem;
 }
 
@@ -98,11 +98,11 @@ header h1 a {
 .ulTabletAndDesktop li a {
     color: #7a163c;
     text-decoration: none;
-}
+} */
 
 /*footer*/
 
-footer {
+/* footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,11 +156,11 @@ footer svg {
     margin: 1% 0% 1% 0%;
     color: #7a163c;
     text-align: center;
-}
+} */
 
 /*index*/
 
-.indexBody {
+/* .indexBody {
     background-image: url(../img/fondoIndex.jpg);
     background-size: cover;
     background-position: center;
@@ -236,11 +236,12 @@ footer svg {
 
 .gridFundamentosDesktop {
     display: none;
-}
+} */
+
 
 /*contacto*/
 
-.iconoContacto {
+/* .iconoContacto {
     width: 2.5rem;
 }
 
@@ -307,7 +308,7 @@ footer svg {
 
 #buttonQuieroContacten {
     background-color: #7a163c;
-}
+} */
 
 
 /*galeria*/
@@ -341,13 +342,11 @@ footer svg {
     color: white;
 }
 
-.bodyNosotros h2 {
+#nuestroPersonalH2 {
     color: rgb(140, 0, 255);
     margin: 5% 0% 5% 0%;
     font-size: 2rem;
 }
-
-
 
 #nuestroPersonalDesktop {
     display: none;
@@ -497,12 +496,12 @@ footer svg {
     }
 
     /* nosotros */
-    
+
     #nuestraHistoria h2 {
         font-size: 2.5rem;
         margin: 5% 0% 5% 0%;
     }
-    
+
     #nuestraHistoria p {
         font-size: 1.2rem;
     }
@@ -620,7 +619,7 @@ footer svg {
     #nuestraHistoria {
         margin: 0% 6% 0% 6%;
     }
-    
+
     #nuestraHistoria h2 {
         margin: 0% 0% 3% 0%;
     }
@@ -647,7 +646,7 @@ footer svg {
 
     .card img {
         width: 88%;
-    
+
     }
 
     .card h3 {
