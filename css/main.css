@@ -16,6 +16,25 @@
   overflow: hidden;
 }
 
+.indexBody {
+  background-image: url(../img/fondoIndex.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bodyContacto {
+  background-image: url(../img/dark-paths.png);
+}
+
+.bodyNosotros {
+  background-image: url(../img/fondoIndex.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 95%;
+}
+
 header {
   font-size: 1.2rem;
 }
@@ -125,25 +144,6 @@ footer .copyright {
   margin: 1% 0% 1% 0%;
   color: #7a163c;
   text-align: center;
-}
-
-.indexBody {
-  background-image: url(../img/fondoIndex.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.bodyContacto {
-  background-image: url(../img/dark-paths.png);
-}
-
-.bodyNosotros {
-  background-image: url(../img/fondoIndex.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  opacity: 95%;
 }
 
 .mainIndex .subTitulo {
@@ -298,6 +298,330 @@ footer .copyright {
 }
 .mainNosotros #nuestroPersonalDesktop {
   display: none;
+}
+
+@media screen and (min-width: 520px) {
+  header #navMobile .container-fluid a {
+    font-size: 1.5rem;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+  .footer h3 a {
+    font-size: 1.5rem;
+  }
+  .footer .footerInfoContacto .redesSociales svg {
+    width: 30px;
+  }
+  .mainIndex .subTitulo h2 {
+    font-size: 2rem;
+  }
+  .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card h3 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+  .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card p {
+    font-size: 1.7rem;
+  }
+  .mainContacto .informacion {
+    margin: 3% 10% 4% 10%;
+  }
+  .mainContacto .informacion p {
+    top: 6px;
+    font-size: 1.5rem;
+  }
+  .mainContacto .informacion .row #contactoBasico .iconoContacto {
+    width: 4rem;
+    height: 4rem;
+  }
+  .mainContacto .informacion .row #redes a img {
+    width: 5rem;
+  }
+  .mainContacto .informacion .row h2 {
+    font-size: 2.2rem;
+  }
+  .mainContacto .informacion .row #mapaGM {
+    height: 440px;
+  }
+  .mainContacto .informacion .quieroQueMeContacten h2 {
+    font-size: 2.2rem;
+  }
+  .mainNosotros #nuestraHistoria h2 {
+    font-size: 2.5rem;
+    margin: 5% 0% 5% 0%;
+  }
+  .mainNosotros #nuestraHistoria div p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header #navMobile {
+    display: none;
+  }
+  header .navTabletAndDesktop {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+  }
+  header .navTabletAndDesktop h1 a {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop {
+    margin: 0;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop li a {
+    font-size: 1rem;
+  }
+  .footer {
+    font-size: 1.2rem;
+  }
+  .footer h3 {
+    margin: 0.5%;
+  }
+  .footer h3 a {
+    font-size: 1.7rem;
+  }
+  .footer h3 a {
+    font-size: 1.5rem;
+  }
+  .footer .footerInfoContacto .redesSociales svg {
+    width: 35px;
+  }
+  .mainIndex .subTitulo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+  .mainIndex .fundamentos {
+    display: flex;
+    justify-content: center;
+  }
+  .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card img {
+    width: 577px;
+    margin: 3% auto 3% auto;
+  }
+  .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card p {
+    font-size: 2rem;
+  }
+  .mainContacto .informacion {
+    margin: 0% 10% 4% 10%;
+  }
+  .mainContacto .informacion p {
+    top: 6px;
+    font-size: 2rem;
+  }
+  .mainContacto .informacion .row #contactoBasico .iconoContacto {
+    width: 5rem;
+    height: 5rem;
+  }
+  .mainContacto .informacion .row #redes a img {
+    width: 7rem;
+  }
+  .mainContacto .informacion .row h2 {
+    font-size: 2.8rem;
+  }
+  .mainContacto .informacion .row #mapaGM {
+    height: 500px;
+  }
+  .mainContacto .informacion .quieroQueMeContacten h2 {
+    font-size: 2.8rem;
+  }
+  .mainContacto .informacion .quieroQueMeContacten div form div #buttonQuieroContacten {
+    font-size: 1.6rem;
+  }
+  .mainNosotros #nuestraHistoria {
+    margin: 0% 6% 0% 6%;
+  }
+  .mainNosotros #nuestraHistoria h2 {
+    margin: 0% 0% 3% 0%;
+  }
+  .mainNosotros #nuestraHistoria div p {
+    font-size: 1.2rem;
+  }
+  .mainNosotros #nuestroPersonash2 {
+    margin: 3% 0% 5% 0%;
+    font-size: 2.5rem;
+  }
+  .mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .card h3 {
+    font-size: 3.3rem;
+  }
+  .mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .card p {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .navTabletAndDesktop h1 a {
+    font-size: 1.7rem;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop {
+    width: 500px;
+    margin: 0;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop li a {
+    font-size: 1.3rem;
+  }
+  .mainIndex .fundamentos #carouselExampleCaptions {
+    display: none;
+  }
+  .mainIndex .gridFundamentosDesktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0% 8% 5% 8%;
+    grid-column-gap: 5%;
+  }
+  .mainIndex .gridFundamentosDesktop .card {
+    width: 100%;
+  }
+  .mainIndex .gridFundamentosDesktop .card img {
+    width: 88%;
+  }
+  .mainIndex .gridFundamentosDesktop .card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+  }
+  .mainIndex .gridFundamentosDesktop .card p {
+    font-size: 1rem;
+  }
+  .mainContacto .informacion {
+    margin: 2% 0% 3% 10%;
+    width: 570px;
+  }
+  .mainContacto .informacion p {
+    color: white;
+    position: static;
+    margin: 0% 0% 0% 4%;
+    top: 6px;
+    font-size: 2rem;
+  }
+  .mainContacto .informacion .row #contactoBasico {
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    margin: 3% 0% 3% 0%;
+  }
+  .mainContacto .informacion .row #contactoBasico .iconoContacto {
+    width: 3rem;
+    height: 3rem;
+  }
+  .mainContacto .informacion .row #redes {
+    margin: 5% 0% 5% 0%;
+  }
+  .mainContacto .informacion .row #redes a img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .mainContacto .informacion .row h2 {
+    font-size: 2.5rem;
+    margin: 1% 0% 6% 0%;
+  }
+  .mainContacto .informacion .row #mapaGM {
+    margin-bottom: 5%;
+    height: 300px;
+  }
+  .mainContacto .informacion .quieroQueMeContacten h2 {
+    font-size: 2.8rem;
+  }
+  .mainContacto .informacion .quieroQueMeContacten div form div label {
+    color: white;
+    margin-right: 3%;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  .mainContacto .informacion .quieroQueMeContacten div form div input {
+    font-size: 1.5rem;
+  }
+  .mainContacto .informacion .quieroQueMeContacten div form div #buttonQuieroContacten {
+    font-size: 1.6rem;
+  }
+  .mainNosotros #nuestraHistoria div p {
+    font-size: 1.2;
+  }
+  .mainNosotros #nuestroPersonalH2 {
+    font-size: 3rem;
+    margin: 1% 0% 1% 0%;
+  }
+  .mainNosotros #carouselExampleCaptions {
+    display: none;
+  }
+  .mainNosotros #nuestroPersonalDesktop {
+    display: flex;
+    margin: 0% 6% 5% 6%;
+  }
+  .mainNosotros #nuestroPersonalDesktop .card {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .mainNosotros #nuestroPersonalDesktop .card img {
+    margin: 3% 5% 5% 5%;
+  }
+  .mainNosotros #nuestroPersonalDesktop .card h3 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .mainNosotros #nuestroPersonalDesktop .card p {
+    margin: 0% 5% 5% 5%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .navTabletAndDesktop h1 a {
+    position: relative;
+    bottom: 3px;
+    font-size: 2.5rem;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop {
+    width: 700px;
+    margin: 0;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop li a {
+    font-size: 1.9rem;
+  }
+  .footer {
+    font-size: 1.4rem;
+  }
+  .footer h3 a {
+    font-size: 1.9rem;
+  }
+  .footer .footerInfoContacto .redesSociales svg {
+    width: 40px;
+  }
+  .mainIndex .subTitulo h2 {
+    font-size: 3rem;
+  }
+  .mainIndex .card img {
+    width: 70%;
+    margin: 6% auto 6% auto;
+  }
+  .mainIndex .card p {
+    font-size: 1.5rem;
+  }
+  .mainContacto .informacion .row #contactoBasico .iconoContacto {
+    width: 3rem;
+    height: 3rem;
+  }
+  .mainContacto .informacion .row #redes {
+    margin: 5% 0% 5% 0%;
+  }
+  .mainContacto .informacion .row #redes a img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .mainContacto .informacion .row h2 {
+    font-size: 3rem;
+  }
+  .mainContacto .informacion .row #mapaGM {
+    height: 360px;
+  }
+  .mainContacto .informacion .quieroQueMeContacten h2 {
+    font-size: 2.8rem;
+  }
+  .mainContacto .informacion .quieroQueMeContacten div form div #buttonQuieroContacten {
+    font-size: 2rem;
+  }
+  .mainNosotros #nuestroPersonalDesktop div .card p {
+    font-size: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

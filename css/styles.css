@@ -310,19 +310,9 @@ footer svg {
     background-color: #7a163c;
 } */
 
-
-/*galeria*/
-
-.galeriaBody {
-    background: url(../img/fondoGaleria.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 /*nosotros*/
 
-.bodyNosotros {
+/* .bodyNosotros {
     background-image: url(../img/fondoIndex.jpg);
     background-size: cover;
     background-position: center;
@@ -351,9 +341,18 @@ footer svg {
 #nuestroPersonalDesktop {
     display: none;
 }
-
+ */
 
 /*servicios*/
+
+/*galeria*/
+
+.galeriaBody {
+    background: url(../img/fondoGaleria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .bodyServicios {
     background-image: url(../img/fondoServicios.webp);
@@ -430,26 +429,13 @@ footer svg {
 
 @media screen and (min-width: 520px) {
 
-    /*navbar*/
+    /* navbar
 
     .container-fluid a {
         font-size: 1.5rem;
     }
+*/
 
-    /*footer*/
-
-    .footer {
-        font-size: 1rem;
-    }
-
-    .footer h3 a {
-
-        font-size: 1.5rem;
-    }
-
-    footer svg {
-        width: 25px;
-    }
 
     /*index*/
 
