@@ -121,6 +121,34 @@
         }
 
     }
+
+    //servicios 
+    .mainServicios {
+        .inforServicios {
+            margin: 2% 4% 2% 4%;
+
+            .contenedorServicios {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .deServicioAContacto {
+                button {
+                    a {
+                        font-size: 1.3rem;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 
@@ -138,7 +166,7 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
-            height: 15vh;
+            height: 10vh;
 
             h1 {
                 a {
@@ -191,7 +219,6 @@
         .subTitulo {
             h2 {
                 font-size: 2.5rem;
-                margin-bottom: 5%;
             }
         }
 
@@ -310,7 +337,37 @@
             }
         }
     }
+
+    //servicios
+    .mainServicios {
+        .inforServicios {
+            margin: 0% 6% 2% 6%;
+
+            .contenedorServicios {
+                h2 {
+                    font-size: 2.7rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+
+                img {
+                    margin: 5% 0% 5% 0%;
+                }
+            }
+
+            .deServicioAContacto {
+                button {
+                    a {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -318,6 +375,8 @@
 
     header {
         .navTabletAndDesktop {
+            height: 15vh;
+
             h1 {
                 a {
                     font-size: 1.7rem;
@@ -357,6 +416,10 @@
             grid-column-gap: 5%;
 
             .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.5);
                 width: 100%;
 
                 img {
@@ -370,6 +433,7 @@
 
                 p {
                     font-size: 1rem;
+                    margin: 0% 3% 3% 3%;
                 }
             }
         }
@@ -395,22 +459,11 @@
                     display: flex;
                     justify-content: start;
                     margin: 3% 0% 3% 0%;
-
-                    .iconoContacto {
-                        width: 3rem;
-                        height: 3rem;
-                    }
                 }
 
                 #redes {
                     margin: 5% 0% 5% 0%;
 
-                    a {
-                        img {
-                            width: 4rem;
-                            height: 4rem;
-                        }
-                    }
                 }
 
                 h2 {
@@ -450,10 +503,7 @@
                     }
                 }
             }
-
         }
-
-
     }
 
     //nosotros
@@ -475,8 +525,6 @@
             display: none;
         }
 
-
-
         #nuestroPersonalDesktop {
             display: flex;
             margin: 0% 6% 5% 6%;
@@ -496,6 +544,85 @@
 
                 p {
                     margin: 0% 5% 5% 5%;
+                }
+            }
+        }
+    }
+
+    //servicios 
+    .mainServicios {
+        .inforServicios {
+
+            .contenedorServicios {
+                margin: 4% 0% 0% 0%;
+                height: 1765px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4%;
+                overflow: hidden;
+
+                div {
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                img {
+                    margin: 0;
+                    aspect-ratio: none;
+                    max-height: 297px;
+                    object-fit: cover;
+                }
+
+                grid-template-areas: "item1 item2"
+                "item3 item4"
+                "item5 item6"
+                "item7 item8"
+                "item9 item10"
+                ;
+
+                .imagen1 {
+                    grid-area: item1;
+                }
+
+                .texto1 {
+                    grid-area: item2;
+                }
+
+                .imagen2 {
+                    grid-area: item4;
+                }
+
+                .texto2 {
+                    grid-area: item3;
+                }
+
+                .imagen3 {
+                    grid-area: item5;
+                }
+
+                .texto3 {
+                    grid-area: item6;
+                }
+
+                .imagen4 {
+                    grid-area: item8;
+                }
+
+                .texto4 {
+                    grid-area: item7;
+                }
+
+                .imagen5 {
+                    grid-area: item9;
+                }
+
+                .texto5 {
+                    grid-area: item10;
                 }
             }
         }
@@ -525,7 +652,7 @@
 
                 li {
                     a {
-                        font-size: 1.9rem;
+                        font-size: 1.8rem;
                     }
                 }
             }
@@ -577,22 +704,10 @@
     .mainContacto {
         .informacion {
             .row {
-                #contactoBasico {
-                    .iconoContacto {
-                        width: 3rem;
-                        height: 3rem
-                    }
-                }
 
                 #redes {
                     margin: 5% 0% 5% 0%;
 
-                    a {
-                        img {
-                            width: 6rem;
-                            height: 6rem;
-                        }
-                    }
                 }
 
                 h2 {
@@ -637,5 +752,41 @@
         }
     }
 
+    //servicios
+    .mainServicios {
+        .inforServicios {
 
+            .contenedorServicios {
+                margin: 4% 0% 0% 0%;
+                height: 2400px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4%;
+                overflow: hidden;
+
+                img {
+                    margin: 0;
+                    aspect-ratio: none;
+                    max-height: 500px;
+                    object-fit: cover;
+                }
+
+                div {
+                    h2 {
+                        font-size: 2.2rem;
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .deServicioAContacto {
+                button {
+                    margin: 5% 0% 5% 0%;
+                }
+            }
+        }
+    }
 }

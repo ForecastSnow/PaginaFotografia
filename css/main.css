@@ -35,6 +35,10 @@
   opacity: 95%;
 }
 
+.bodyServicios {
+  background-color: #02111B;
+}
+
 header {
   font-size: 1.2rem;
 }
@@ -300,6 +304,36 @@ footer .copyright {
   display: none;
 }
 
+.mainServicios .inforServicios {
+  margin: 2% 4% 2% 4%;
+}
+.mainServicios .inforServicios .contenedorServicios h2 {
+  color: white;
+  font-size: 1.2rem;
+}
+.mainServicios .inforServicios .contenedorServicios p {
+  color: white;
+  font-size: 0.9rem;
+}
+.mainServicios .inforServicios .contenedorServicios img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin: 3% 0% 3% 0%;
+}
+.mainServicios .inforServicios .deServicioAContacto {
+  display: flex;
+  justify-content: center;
+}
+.mainServicios .inforServicios .deServicioAContacto button {
+  background-color: #7a163c;
+  border: 0;
+  margin: 3% 0% 5% 0%;
+}
+.mainServicios .inforServicios .deServicioAContacto button a {
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 520px) {
   header #navMobile .container-fluid a {
     font-size: 1.5rem;
@@ -353,6 +387,20 @@ footer .copyright {
   .mainNosotros #nuestraHistoria div p {
     font-size: 1.2rem;
   }
+  .mainServicios .inforServicios {
+    margin: 2% 4% 2% 4%;
+  }
+  .mainServicios .inforServicios .contenedorServicios h2 {
+    font-size: 1.5rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios p {
+    font-size: 1.1rem;
+  }
+  .mainServicios .inforServicios .deServicioAContacto button a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+  }
 }
 @media screen and (min-width: 768px) {
   header #navMobile {
@@ -362,7 +410,7 @@ footer .copyright {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
   }
   header .navTabletAndDesktop h1 a {
     font-size: 1.4rem;
@@ -391,7 +439,6 @@ footer .copyright {
   }
   .mainIndex .subTitulo h2 {
     font-size: 2.5rem;
-    margin-bottom: 5%;
   }
   .mainIndex .fundamentos {
     display: flex;
@@ -449,8 +496,26 @@ footer .copyright {
   .mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .card p {
     font-size: 1.7rem;
   }
+  .mainServicios .inforServicios {
+    margin: 0% 6% 2% 6%;
+  }
+  .mainServicios .inforServicios .contenedorServicios h2 {
+    font-size: 2.7rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios p {
+    font-size: 1.6rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios img {
+    margin: 5% 0% 5% 0%;
+  }
+  .mainServicios .inforServicios .deServicioAContacto button a {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 1024px) {
+  header .navTabletAndDesktop {
+    height: 15vh;
+  }
   header .navTabletAndDesktop h1 a {
     font-size: 1.7rem;
   }
@@ -472,6 +537,10 @@ footer .copyright {
     grid-column-gap: 5%;
   }
   .mainIndex .gridFundamentosDesktop .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
   }
   .mainIndex .gridFundamentosDesktop .card img {
@@ -483,6 +552,7 @@ footer .copyright {
   }
   .mainIndex .gridFundamentosDesktop .card p {
     font-size: 1rem;
+    margin: 0% 3% 3% 3%;
   }
   .mainContacto .informacion {
     margin: 2% 0% 3% 10%;
@@ -501,16 +571,8 @@ footer .copyright {
     justify-content: start;
     margin: 3% 0% 3% 0%;
   }
-  .mainContacto .informacion .row #contactoBasico .iconoContacto {
-    width: 3rem;
-    height: 3rem;
-  }
   .mainContacto .informacion .row #redes {
     margin: 5% 0% 5% 0%;
-  }
-  .mainContacto .informacion .row #redes a img {
-    width: 4rem;
-    height: 4rem;
   }
   .mainContacto .informacion .row h2 {
     font-size: 2.5rem;
@@ -563,6 +625,57 @@ footer .copyright {
   .mainNosotros #nuestroPersonalDesktop .card p {
     margin: 0% 5% 5% 5%;
   }
+  .mainServicios .inforServicios .contenedorServicios {
+    margin: 4% 0% 0% 0%;
+    height: 1765px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+    overflow: hidden;
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10";
+  }
+  .mainServicios .inforServicios .contenedorServicios div h2 {
+    font-size: 1.8rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios div p {
+    font-size: 1.2rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios img {
+    margin: 0;
+    aspect-ratio: none;
+    max-height: 297px;
+    object-fit: cover;
+  }
+  .mainServicios .inforServicios .contenedorServicios .imagen1 {
+    grid-area: item1;
+  }
+  .mainServicios .inforServicios .contenedorServicios .texto1 {
+    grid-area: item2;
+  }
+  .mainServicios .inforServicios .contenedorServicios .imagen2 {
+    grid-area: item4;
+  }
+  .mainServicios .inforServicios .contenedorServicios .texto2 {
+    grid-area: item3;
+  }
+  .mainServicios .inforServicios .contenedorServicios .imagen3 {
+    grid-area: item5;
+  }
+  .mainServicios .inforServicios .contenedorServicios .texto3 {
+    grid-area: item6;
+  }
+  .mainServicios .inforServicios .contenedorServicios .imagen4 {
+    grid-area: item8;
+  }
+  .mainServicios .inforServicios .contenedorServicios .texto4 {
+    grid-area: item7;
+  }
+  .mainServicios .inforServicios .contenedorServicios .imagen5 {
+    grid-area: item9;
+  }
+  .mainServicios .inforServicios .contenedorServicios .texto5 {
+    grid-area: item10;
+  }
 }
 @media screen and (min-width: 1400px) {
   header .navTabletAndDesktop h1 a {
@@ -575,7 +688,7 @@ footer .copyright {
     margin: 0;
   }
   header .navTabletAndDesktop .ulTabletAndDesktop li a {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   .footer {
     font-size: 1.4rem;
@@ -596,16 +709,8 @@ footer .copyright {
   .mainIndex .card p {
     font-size: 1.5rem;
   }
-  .mainContacto .informacion .row #contactoBasico .iconoContacto {
-    width: 3rem;
-    height: 3rem;
-  }
   .mainContacto .informacion .row #redes {
     margin: 5% 0% 5% 0%;
-  }
-  .mainContacto .informacion .row #redes a img {
-    width: 6rem;
-    height: 6rem;
   }
   .mainContacto .informacion .row h2 {
     font-size: 3rem;
@@ -621,6 +726,29 @@ footer .copyright {
   }
   .mainNosotros #nuestroPersonalDesktop div .card p {
     font-size: 1.3rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios {
+    margin: 4% 0% 0% 0%;
+    height: 2400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+    overflow: hidden;
+  }
+  .mainServicios .inforServicios .contenedorServicios img {
+    margin: 0;
+    aspect-ratio: none;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  .mainServicios .inforServicios .contenedorServicios div h2 {
+    font-size: 2.2rem;
+  }
+  .mainServicios .inforServicios .contenedorServicios div p {
+    font-size: 1.8rem;
+  }
+  .mainServicios .inforServicios .deServicioAContacto button {
+    margin: 5% 0% 5% 0%;
   }
 }
 
