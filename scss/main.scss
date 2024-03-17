@@ -2,6 +2,7 @@
 @import "utilities/_globals.scss";
 @import "utilities/bodyAdjustments"; //define como se comportan en general los backgrounds
 
+
 @import "components/_header.scss";
 @import "components/footer";
 
@@ -11,4 +12,4 @@
 @import "pages/mainNosotros";
 @import "pages/mainServicios";
 
-@import "utilities/mediaQueries"
+@import "utilities/mediaQueries";

@@ -24,7 +24,7 @@
 }
 
 .bodyContacto {
-  background-image: url(../img/dark-paths.png);
+  background-image: url(../img/darkPatron.png);
 }
 
 .bodyNosotros {
@@ -37,6 +37,13 @@
 
 .bodyServicios {
   background-color: #02111B;
+}
+
+.bodyGaleria {
+  background-image: url(../img/fondoGaleria.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
@@ -268,6 +275,32 @@ footer .copyright {
   background-color: #7a163c;
 }
 
+.mainGaleria {
+  margin: 3% 4% 3% 4%;
+}
+.mainGaleria .contenedorMultimedia h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: black;
+}
+.mainGaleria .contenedorMultimedia #video {
+  aspect-ratio: 16/9;
+  margin-top: 2%;
+  width: 100%;
+}
+.mainGaleria .contenedorMultimedia div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4%;
+}
+.mainGaleria .contenedorMultimedia div img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 33%;
+}
+
 .mainNosotros #nuestraHistoria {
   margin: 0% 1% 0% 1%;
 }
@@ -350,6 +383,9 @@ footer .copyright {
   .mainIndex .subTitulo h2 {
     font-size: 2rem;
   }
+  .mainIndex .fundamentos h2 {
+    font-size: 2rem;
+  }
   .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card h3 {
     font-size: 2rem;
     margin-bottom: 5%;
@@ -401,6 +437,9 @@ footer .copyright {
     color: white;
     text-decoration: none;
   }
+  .mainGaleria .contenedorMultimedia h2 {
+    font-size: 1.7rem;
+  }
 }
 @media screen and (min-width: 768px) {
   header #navMobile {
@@ -443,6 +482,9 @@ footer .copyright {
   .mainIndex .fundamentos {
     display: flex;
     justify-content: center;
+  }
+  .mainIndex .fundamentos h2 {
+    font-size: 2.4rem;
   }
   .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card img {
     width: 577px;
@@ -511,6 +553,9 @@ footer .copyright {
   .mainServicios .inforServicios .deServicioAContacto button a {
     font-size: 2.5rem;
   }
+  .mainGaleria .contenedorMultimedia h2 {
+    font-size: 2.3rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   header .navTabletAndDesktop {
@@ -528,6 +573,10 @@ footer .copyright {
   }
   .mainIndex .fundamentos #carouselExampleCaptions {
     display: none;
+  }
+  .mainIndex .fundamentos h2 {
+    font-size: 3rem;
+    margin-bottom: 3%;
   }
   .mainIndex .gridFundamentosDesktop {
     display: grid;
@@ -626,9 +675,9 @@ footer .copyright {
     margin: 0% 5% 5% 5%;
   }
   .mainServicios .inforServicios .contenedorServicios {
+    display: grid;
     margin: 4% 0% 0% 0%;
     height: 1765px;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4%;
     overflow: hidden;
@@ -675,6 +724,12 @@ footer .copyright {
   }
   .mainServicios .inforServicios .contenedorServicios .texto5 {
     grid-area: item10;
+  }
+  .mainGaleria {
+    width: 60%;
+  }
+  .mainGaleria .contenedorMultimedia h2 {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -749,6 +804,10 @@ footer .copyright {
   }
   .mainServicios .inforServicios .deServicioAContacto button {
     margin: 5% 0% 5% 0%;
+  }
+  .mainGaleria {
+    margin: 0% 8% 0% 8%;
+    width: 40%;
   }
 }
 

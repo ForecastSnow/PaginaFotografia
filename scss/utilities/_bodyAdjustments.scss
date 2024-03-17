@@ -6,7 +6,7 @@
 }
 
 .bodyContacto {
-    background-image: url(../img/dark-paths.png);
+    background-image: url(../img/darkPatron.png);
 }
 
 .bodyNosotros {
@@ -19,4 +19,11 @@
 
 .bodyServicios {
     background-color: #02111B;
+}
+
+.bodyGaleria {
+    background-image: url(../img/fondoGaleria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }

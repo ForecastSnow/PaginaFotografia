@@ -1,0 +1,33 @@
+.mainGaleria {
+    margin: 3% 4% 3% 4%;
+    .contenedorMultimedia {
+        h2 {
+            font-size: 1rem;
+            margin: 0;
+            color: black;
+        }
+        
+        #video {
+            aspect-ratio: 16/9;
+            margin-top: 2%;
+            width: 100%;
+        }
+        
+        div {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 4%;
+            
+            img {
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                width: 33%;
+            
+        }
+        }
+
+        
+    }
+}
