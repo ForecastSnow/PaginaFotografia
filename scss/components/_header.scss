@@ -46,6 +46,7 @@ header {
                     a {
                         color: #ffffff;
                         text-decoration: none;
+                        text-shadow: 1px 1px 1px black;
                     }
                 }
             }
@@ -54,9 +55,10 @@ header {
 
     .navTabletAndDesktop {
         height: 15vh;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
         display: none;
         align-items: center;
+        justify-content: space-between;
+
 
         .ulTabletAndDesktop {
             display: flex;

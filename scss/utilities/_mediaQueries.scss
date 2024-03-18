@@ -156,6 +156,7 @@
 
     //galeria
     .mainGaleria {
+
         .contenedorMultimedia {
             h2 {
                 font-size: 1.7rem;
@@ -171,20 +172,27 @@
 
     //navbar
     header {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+
         #navMobile {
             display: none;
         }
 
         .navTabletAndDesktop {
             display: flex;
-            justify-content: space-around;
-            width: 100%;
+            justify-content: space-between;
             height: 10vh;
+            margin: 0% 8% 0% 8%;
+
 
             h1 {
                 a {
                     font-size: 1.4rem;
                     margin: 0;
+                }
+
+                a:hover {
+                    color: #7c2a4a;
                 }
             }
 
@@ -194,6 +202,10 @@
                 li {
                     a {
                         font-size: 1rem;
+                    }
+
+                    a:hover {
+                        color: #7c2a4a;
                     }
                 }
             }
@@ -238,11 +250,13 @@
         .fundamentos {
             display: flex;
             justify-content: center;
+
             h2 {
                 font-size: 2.4rem;
             }
 
             #carouselExampleCaptions {
+                margin: 4% 8% 4% 8%;
                 .carousel-inner {
                     .carousel-item {
                         .card {
@@ -264,7 +278,7 @@
     //contacto 
     .mainContacto {
         .informacion {
-            margin: 0% 10% 4% 10%;
+            margin: 2% 8% 3% 8%;
 
             p {
                 top: 6px;
@@ -338,6 +352,7 @@
         }
 
         .nuestroPersonalCarrusel {
+            margin: 0% 8% 4% 8%;
             #carouselExampleCaptions {
                 .carousel-inner {
                     .card {
@@ -356,9 +371,10 @@
 
     //servicios
     .mainServicios {
+        margin: 0% 8% 0% 8%;
         .inforServicios {
-            margin: 0% 6% 2% 6%;
-
+            width: 100%;
+            margin: 0;
             .contenedorServicios {
                 h2 {
                     font-size: 2.7rem;
@@ -385,6 +401,8 @@
 
     //galeria
     .mainGaleria {
+        margin: 3% 8% 3% 8%;
+
         .contenedorMultimedia {
             h2 {
                 font-size: 2.3rem;
@@ -476,7 +494,6 @@
     //contacto
     .mainContacto {
         .informacion {
-            margin: 2% 0% 3% 10%;
             width: 570px;
 
             p {
@@ -838,7 +855,7 @@
 
     //galeria
     .mainGaleria {
-        margin: 0% 8% 0% 8%;
+        margin: 0% 0% 0% 8%;
         width: 40%;
     }
 }

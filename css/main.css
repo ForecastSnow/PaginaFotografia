@@ -90,12 +90,13 @@ header .navbar #offcanvasNavbar .ulMobile {
 header .navbar #offcanvasNavbar .ulMobile li a {
   color: #ffffff;
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
 }
 header .navTabletAndDesktop {
   height: 15vh;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
   display: none;
   align-items: center;
+  justify-content: space-between;
 }
 header .navTabletAndDesktop .ulTabletAndDesktop {
   display: flex;
@@ -442,24 +443,33 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 768px) {
+  header {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  }
   header #navMobile {
     display: none;
   }
   header .navTabletAndDesktop {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
     height: 10vh;
+    margin: 0% 8% 0% 8%;
   }
   header .navTabletAndDesktop h1 a {
     font-size: 1.4rem;
     margin: 0;
+  }
+  header .navTabletAndDesktop h1 a:hover {
+    color: #7c2a4a;
   }
   header .navTabletAndDesktop .ulTabletAndDesktop {
     margin: 0;
   }
   header .navTabletAndDesktop .ulTabletAndDesktop li a {
     font-size: 1rem;
+  }
+  header .navTabletAndDesktop .ulTabletAndDesktop li a:hover {
+    color: #7c2a4a;
   }
   .footer {
     font-size: 1.2rem;
@@ -486,6 +496,9 @@ footer .copyright {
   .mainIndex .fundamentos h2 {
     font-size: 2.4rem;
   }
+  .mainIndex .fundamentos #carouselExampleCaptions {
+    margin: 4% 8% 4% 8%;
+  }
   .mainIndex .fundamentos #carouselExampleCaptions .carousel-inner .carousel-item .card img {
     width: 577px;
     margin: 3% auto 3% auto;
@@ -494,7 +507,7 @@ footer .copyright {
     font-size: 2rem;
   }
   .mainContacto .informacion {
-    margin: 0% 10% 4% 10%;
+    margin: 2% 8% 3% 8%;
   }
   .mainContacto .informacion p {
     top: 6px;
@@ -532,14 +545,21 @@ footer .copyright {
     margin: 3% 0% 5% 0%;
     font-size: 2.5rem;
   }
+  .mainNosotros .nuestroPersonalCarrusel {
+    margin: 0% 8% 4% 8%;
+  }
   .mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .card h3 {
     font-size: 3.3rem;
   }
   .mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .card p {
     font-size: 1.7rem;
   }
+  .mainServicios {
+    margin: 0% 8% 0% 8%;
+  }
   .mainServicios .inforServicios {
-    margin: 0% 6% 2% 6%;
+    width: 100%;
+    margin: 0;
   }
   .mainServicios .inforServicios .contenedorServicios h2 {
     font-size: 2.7rem;
@@ -552,6 +572,9 @@ footer .copyright {
   }
   .mainServicios .inforServicios .deServicioAContacto button a {
     font-size: 2.5rem;
+  }
+  .mainGaleria {
+    margin: 3% 8% 3% 8%;
   }
   .mainGaleria .contenedorMultimedia h2 {
     font-size: 2.3rem;
@@ -604,7 +627,6 @@ footer .copyright {
     margin: 0% 3% 3% 3%;
   }
   .mainContacto .informacion {
-    margin: 2% 0% 3% 10%;
     width: 570px;
   }
   .mainContacto .informacion p {
@@ -806,7 +828,7 @@ footer .copyright {
     margin: 5% 0% 5% 0%;
   }
   .mainGaleria {
-    margin: 0% 8% 0% 8%;
+    margin: 0% 0% 0% 8%;
     width: 40%;
   }
 }
