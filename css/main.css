@@ -49,37 +49,42 @@
 header {
   font-size: 1.2rem;
 }
-header h1 {
+header nav h1 {
   display: flex;
   align-items: end;
   margin-bottom: 0;
   overflow: hidden;
 }
-header h1 a {
+header nav h1 a {
   white-space: nowrap;
   color: #7a163c;
   font-size: 1.2rem;
   text-decoration: none;
   overflow: hidden;
 }
-header .navbar-toggler {
+header nav .container-fluid .navbar-toggler {
   border: 0;
   user-select: none;
+  padding: 0;
 }
-header .navbar {
+header nav #navMobile {
   justify-content: space-between;
   width: 100%;
   background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), transparent);
   height: 50px;
 }
-header .navbar #offcanvasNavbar {
+header nav #navMobile .container-fluid {
+  margin: 0% 5% 0% 5%;
+  padding: 0;
+}
+header nav #navMobile #offcanvasNavbar {
   display: flex;
   flex-direction: column;
   width: 50%;
   background: linear-gradient(to left, rgb(212, 118, 118), transparent);
   border: 0;
 }
-header .navbar #offcanvasNavbar .ulMobile {
+header nav #navMobile #offcanvasNavbar .ulMobile {
   padding: 0%;
   height: 50%;
   display: flex;
@@ -87,18 +92,18 @@ header .navbar #offcanvasNavbar .ulMobile {
   justify-content: space-around;
   align-items: center;
 }
-header .navbar #offcanvasNavbar .ulMobile li a {
+header nav #navMobile #offcanvasNavbar .ulMobile li a {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
 }
-header .navTabletAndDesktop {
+header nav .navTabletAndDesktop {
   height: 15vh;
   display: none;
   align-items: center;
   justify-content: space-between;
 }
-header .navTabletAndDesktop .ulTabletAndDesktop {
+header nav .navTabletAndDesktop .ulTabletAndDesktop {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -106,7 +111,7 @@ header .navTabletAndDesktop .ulTabletAndDesktop {
   top: 3px;
   width: 390px;
 }
-header .navTabletAndDesktop .ulTabletAndDesktop li a {
+header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
   color: #7a163c;
   text-decoration: none;
 }
@@ -216,7 +221,7 @@ footer .copyright {
 }
 
 .mainContacto .informacion {
-  margin: 4%;
+  margin: 4% 5% 4% 5%;
 }
 .mainContacto .informacion .row #contactoBasico {
   display: flex;
@@ -277,7 +282,7 @@ footer .copyright {
 }
 
 .mainGaleria {
-  margin: 3% 4% 3% 4%;
+  margin: 3% 5% 3% 5%;
 }
 .mainGaleria .contenedorMultimedia h2 {
   font-size: 1rem;
@@ -303,7 +308,7 @@ footer .copyright {
 }
 
 .mainNosotros #nuestraHistoria {
-  margin: 0% 1% 0% 1%;
+  margin: 0% 5% 0% 5%;
 }
 .mainNosotros #nuestraHistoria h2 {
   color: white;
@@ -311,13 +316,16 @@ footer .copyright {
 .mainNosotros #nuestraHistoria p {
   color: white;
 }
+.mainNosotros #nuestraHistoria #historiaTexto {
+  padding: 0;
+}
 .mainNosotros #nuestroPersonalH2 {
   color: rgb(140, 0, 255);
   margin: 5% 0% 5% 0%;
   font-size: 2rem;
 }
 .mainNosotros .nuestroPersonalCarrusel {
-  margin: 0% 3% 3% 3%;
+  margin: 0% 5% 3% 5%;
 }
 .mainNosotros .nuestroPersonalCarrusel #carouselExampleCaptions .carousel-inner .carousel-item .card {
   background-color: rgba(255, 255, 255, 0.5);
@@ -339,7 +347,7 @@ footer .copyright {
 }
 
 .mainServicios .inforServicios {
-  margin: 2% 4% 2% 4%;
+  margin: 2% 5% 2% 5%;
 }
 .mainServicios .inforServicios .contenedorServicios h2 {
   color: white;
@@ -395,7 +403,7 @@ footer .copyright {
     font-size: 1.7rem;
   }
   .mainContacto .informacion {
-    margin: 3% 10% 4% 10%;
+    margin: 3% 5% 4% 5%;
   }
   .mainContacto .informacion p {
     top: 6px;
@@ -425,7 +433,7 @@ footer .copyright {
     font-size: 1.2rem;
   }
   .mainServicios .inforServicios {
-    margin: 2% 4% 2% 4%;
+    margin: 2% 5% 2% 5%;
   }
   .mainServicios .inforServicios .contenedorServicios h2 {
     font-size: 1.5rem;
@@ -446,29 +454,29 @@ footer .copyright {
   header {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
   }
-  header #navMobile {
+  header nav #navMobile {
     display: none;
   }
-  header .navTabletAndDesktop {
+  header nav .navTabletAndDesktop {
     display: flex;
     justify-content: space-between;
     height: 10vh;
     margin: 0% 8% 0% 8%;
   }
-  header .navTabletAndDesktop h1 a {
+  header nav .navTabletAndDesktop h1 a {
     font-size: 1.4rem;
     margin: 0;
   }
-  header .navTabletAndDesktop h1 a:hover {
+  header nav .navTabletAndDesktop h1 a:hover {
     color: #7c2a4a;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop {
     margin: 0;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop li a {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
     font-size: 1rem;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop li a:hover {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop li a:hover {
     color: #7c2a4a;
   }
   .footer {
@@ -533,10 +541,11 @@ footer .copyright {
     font-size: 1.6rem;
   }
   .mainNosotros #nuestraHistoria {
-    margin: 0% 6% 0% 6%;
+    margin: 0% 8% 0% 8%;
   }
   .mainNosotros #nuestraHistoria h2 {
     margin: 0% 0% 3% 0%;
+    padding: 0;
   }
   .mainNosotros #nuestraHistoria div p {
     font-size: 1.2rem;
@@ -581,17 +590,17 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 1024px) {
-  header .navTabletAndDesktop {
+  header nav .navTabletAndDesktop {
     height: 15vh;
   }
-  header .navTabletAndDesktop h1 a {
+  header nav .navTabletAndDesktop h1 a {
     font-size: 1.7rem;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop {
     width: 500px;
     margin: 0;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop li a {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
     font-size: 1.3rem;
   }
   .mainIndex .fundamentos #carouselExampleCaptions {
@@ -755,16 +764,16 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 1400px) {
-  header .navTabletAndDesktop h1 a {
+  header nav .navTabletAndDesktop h1 a {
     position: relative;
     bottom: 3px;
     font-size: 2.5rem;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop {
     width: 700px;
     margin: 0;
   }
-  header .navTabletAndDesktop .ulTabletAndDesktop li a {
+  header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
     font-size: 1.8rem;
   }
   .footer {

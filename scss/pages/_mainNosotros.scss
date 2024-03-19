@@ -2,7 +2,7 @@
 
 
     #nuestraHistoria {
-        margin: 0% 1% 0% 1%;
+        margin: 0% 5% 0% 5%;
 
         h2 {
             color: white;
@@ -10,6 +10,10 @@
 
         p {
             color: white;
+        }
+
+        #historiaTexto {
+            padding: 0;
         }
 
     }
@@ -21,7 +25,7 @@
     }
 
     .nuestroPersonalCarrusel {
-        margin: 0% 3% 3% 3%;
+        margin: 0% 5% 3% 5%;
         #carouselExampleCaptions {
             .carousel-inner {
                 .carousel-item {
