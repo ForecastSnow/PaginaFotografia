@@ -1,0 +1,42 @@
+POR HACER, FECHA DE ENTREGA 21/3
+
+
+
+mixin y variables, optimizacion de codigo.
+
+reparar el tamaño dispar de las card.
+
+
+
+HECHO
+
+ser completamente responsive. TAMOH
+
+eliminar en el index el #fundamentos dado que no sirve para nada! TAMOH
+
+parece tambien que tengo mal identados, revisar!! TAMOH
+
+checar que todas las imagenes usen camelCase. TAMOH
+
+parece que me deje anclas sin el target blank, revisar. TAMOH
+
+pasar todo el codigo de diseño de css a sass. TAMOH
+
+aumentar la resolucion o remplazar las imagenes. TAMOH
+
+prestar atencion y eliminar las faltas de ortografia incluyendo tildes. TAMOH
+
+revisar la paleta de colores para aumentar el contraste con el menu hamburguesa, incluso considerar usar contrastes o sombras. TAMOH
+
+terminar por completo la estructura final de la web asi como el diseño. TAMOH
+
+reparar el navbar para que los margin queden alineados al contenido, asi como tambien invertir el h1 con el ancla y que solo haya un nav!!. TAMOH
+
+eliminar los dos nav y juntar a uno. TAMOH
+
+reacomodar mejor el navbar mobile. TAMOH
+
+borrar del repositorio la carpeta de nodes. TAMOH
+
+
+

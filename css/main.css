@@ -10,6 +10,7 @@
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * h1, h2, h3 {
@@ -799,7 +800,7 @@ footer .copyright {
     margin: 5% 0% 5% 0%;
   }
   .mainContacto .informacion .row h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .mainContacto .informacion .row #mapaGM {
     height: 360px;
