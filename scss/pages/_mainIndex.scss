@@ -1,26 +1,21 @@
 .mainIndex {
 
     .subTitulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include flex(column, stretch, end );
         height: 85vh;
         width: 100vw;
         position: relative;
         bottom: 5vh;
 
         h2 {
-            display: flex;
-            justify-content: center;
-            color: #7a163c;
+            @include flex(row, stretch, center );
+            color: $colorPrincipal;
             font-family: 'Times New Roman', Times, serif;
 
         }
 
         a {
-            display: flex;
-            justify-content: center;
-
+            @include flex(row, stretch, center );
             img {
                 margin-top: 10px;
                 width: 70px;
@@ -31,13 +26,10 @@
     }
 
     .fundamentos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include flex(column, stretch, space-around );
 
         h2 {
-            display: flex;
-            justify-content: center;
+            @include flex(row, stretch, center );
             font-size: 1.5rem;
             color: black;
             overflow: hidden;
@@ -54,8 +46,7 @@
                 }
 
                 h3 {
-                    display: flex;
-                    justify-content: center;
+                    @include flex(row, stretch, center );;
                     overflow: hidden;
                 }
 

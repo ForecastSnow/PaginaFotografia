@@ -3,14 +3,13 @@ header {
 
     nav {
         h1 {
-            display: flex;
-            align-items: end;
+            @include flex(row, end, flex-start );
             margin-bottom: 0;
             overflow: hidden;
 
             a {
                 white-space: nowrap;
-                color: #7a163c;
+                color: $colorPrincipal;
                 font-size: 1.2rem;
                 text-decoration: none;
                 overflow: hidden;
@@ -33,7 +32,7 @@ header {
         #navMobile {
             justify-content: space-between;
             width: 100%;
-            background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), transparent);
+            background: linear-gradient(to bottom, #DEB986, transparent);
             height: 50px;
 
             .container-fluid {
@@ -42,8 +41,7 @@ header {
             }
 
             #offcanvasNavbar {
-                display: flex;
-                flex-direction: column;
+                @include flex(column, stretch, flex-start );
                 width: 50%;
                 background: linear-gradient(to left, rgb(212, 118, 118), transparent);
                 border: 0;
@@ -51,10 +49,7 @@ header {
                 .ulMobile {
                     padding: 0%;
                     height: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
+                    @include flex(column, center, space-around );
 
                     li {
                         a {
@@ -75,16 +70,14 @@ header {
 
 
             .ulTabletAndDesktop {
-                display: flex;
-                justify-content: space-between;
-                align-items: end;
+                @include flex(row, end, space-between );
                 position: relative;
                 top: 3px;
                 width: 390px;
 
                 li {
                     a {
-                        color: #7a163c;
+                        color: $colorPrincipal;
                         text-decoration: none;
                     }
                 }

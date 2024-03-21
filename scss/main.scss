@@ -1,7 +1,9 @@
 @import "utilities/_reset.scss";
 @import "utilities/_globals.scss";
 @import "utilities/bodyAdjustments"; //define como se comportan en general los backgrounds
-
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
 
 @import "components/_header.scss";
 @import "components/footer";

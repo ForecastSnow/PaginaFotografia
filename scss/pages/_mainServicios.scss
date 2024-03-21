@@ -21,11 +21,10 @@
         }
 
         .deServicioAContacto {
-            display: flex;
-            justify-content: center;
+            @include flex(row, stretch, center );
 
             button {
-                background-color: #7a163c;
+                background-color: $colorPrincipal;
                 border: 0;
                 margin: 3% 0% 5% 0%;
 
@@ -33,6 +32,12 @@
                     color: white;
                     text-decoration: none;
                 }
+
+
+            }
+
+            button:hover {
+                background-color: $colorPrincipal;
             }
         }
     }

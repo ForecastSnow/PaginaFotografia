@@ -1,0 +1,11 @@
+%pruebaExteds {
+    h2 {
+        @include flex(row, stretch, center);
+        color: white;
+        white-space: nowrap;
+        font-size: 1.4rem;
+        margin: 0% 0% 5% 0%;
+    }
+}
+
+//esta en _mainContacto.scss

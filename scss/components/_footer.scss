@@ -1,7 +1,5 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, flex-start );
     border-top: 1px solid black;
     width: 100%;
     background-color: white;
@@ -17,9 +15,7 @@ footer {
     }
 
     .footerInfoContacto {
-        display: flex;
-        justify-content: space-between;
-
+        @include flex(row, stretch, space-between );
         .direccionYMail {
             display: flex;
             flex-direction: column;
@@ -33,9 +29,7 @@ footer {
         }
 
         .redesSociales {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex(column, stretch, space-between );
             margin: 2% 7% 2% 0%;
 
             .anclaTextoFooter {
@@ -50,7 +44,7 @@ footer {
 
     .copyright {
         margin: 1% 0% 1% 0%;
-        color: #7a163c;
+        color: $colorPrincipal;
         text-align: center;
     }
 

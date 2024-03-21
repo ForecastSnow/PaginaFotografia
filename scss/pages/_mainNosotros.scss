@@ -38,8 +38,7 @@
                         }
 
                         h3 {
-                            display: flex;
-                            justify-content: center;
+                            @include flex(row, stretch, center );
                             overflow: hidden;
                         }
 
