@@ -313,7 +313,7 @@ footer .copyright {
   background-color: #7a163c;
 }
 .mainContacto .informacion .quieroQueMeContacten div #buttonQuieroContacten:hover {
-  background-color: #7a163c;
+  background-color: #9b003b;
 }
 
 .mainGaleria {
@@ -415,7 +415,7 @@ footer .copyright {
   text-decoration: none;
 }
 .mainServicios .inforServicios .deServicioAContacto button:hover {
-  background-color: #7a163c;
+  background-color: #9b003b;
 }
 
 @media screen and (min-width: 520px) {
