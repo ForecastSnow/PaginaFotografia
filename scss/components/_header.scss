@@ -1,11 +1,19 @@
 header {
+
     font-size: 1.2rem;
+    width: 100%;
+    background: linear-gradient(to bottom, #DEB986, transparent);
+    height: 60px;
 
     nav {
+        @include flex(row, stretch, space-between);
+        font-size: 1.2rem;
+        margin: 0% 5% 0% 5%;
+
         h1 {
-            @include flex(row, end, flex-start );
-            margin-bottom: 0;
-            overflow: hidden;
+            @include flex (row, center, flex-start);
+            height: 50px;
+            margin: 0;
 
             a {
                 white-space: nowrap;
@@ -14,77 +22,61 @@ header {
                 text-decoration: none;
                 overflow: hidden;
             }
-        }
-
-        .container-fluid {
-
-
-            .navbar-toggler {
-                border: 0;
-                user-select: none;
-                padding: 0;
-            }
-
 
         }
 
-
-        #navMobile {
-            justify-content: space-between;
-            width: 100%;
-            background: linear-gradient(to bottom, #DEB986, transparent);
-            height: 50px;
+        #botonHamburguesa {
+            padding: 0;
 
             .container-fluid {
-                margin: 0% 5% 0% 5%;
                 padding: 0;
-            }
 
-            #offcanvasNavbar {
-                @include flex(column, stretch, flex-start );
-                width: 50%;
-                background: linear-gradient(to left, rgb(212, 118, 118), transparent);
-                border: 0;
+                .navbar-toggler {
+                    border: 0;
+                    user-select: none;
+                    padding: 0;
+                }
 
-                .ulMobile {
-                    padding: 0%;
-                    height: 50%;
-                    @include flex(column, center, space-around );
+                #offcanvasNavbar {
+                    @include flex(column, stretch, flex-start);
+                    width: 50%;
+                    background: linear-gradient(to left, rgb(212, 118, 118), transparent);
+                    border: 0;
 
-                    li {
-                        a {
-                            color: #ffffff;
-                            text-decoration: none;
-                            text-shadow: 1px 1px 1px black;
+                    .ulMobile {
+                        padding: 0%;
+                        height: 50%;
+
+                        @include flex(column, center, space-around);
+
+                        li {
+                            a {
+                                color: #ffffff;
+                                text-decoration: none;
+                                text-shadow: 1px 1px 1px black;
+                            }
                         }
                     }
                 }
             }
+
         }
+    }
 
-        .navTabletAndDesktop {
-            height: 15vh;
-            display: none;
-            align-items: center;
-            justify-content: space-between;
+    .navTabletAndDesktop {
+        display: none;
 
+        .ulTabletAndDesktop {
+            @include flex(row, center, space-between);
+            width: 390px;
 
-            .ulTabletAndDesktop {
-                @include flex(row, end, space-between );
-                position: relative;
-                top: 3px;
-                width: 390px;
-
-                li {
-                    a {
-                        color: $colorPrincipal;
-                        text-decoration: none;
-                    }
+            li {
+                a {
+                    color: $colorPrincipal;
+                    text-decoration: none;
                 }
             }
         }
     }
-
-
 
 }

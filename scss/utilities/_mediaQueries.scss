@@ -2,11 +2,70 @@
 
     //navbar
     header {
-        #navMobile {
-            .container-fluid {
+
+        font-size: 1.2rem;
+        width: 100%;
+        background: linear-gradient(to bottom, #DEB986, transparent);
+        height: 60px;
+
+        nav {
+            @include flex(row, stretch, space-between);
+            font-size: 1.2rem;
+            margin: 0% 5% 0% 5%;
+
+            h1 {
+                @include flex (row, center, flex-start);
+                height: 50px;
+
                 a {
+                    white-space: nowrap;
+                    color: $colorPrincipal;
                     font-size: 1.5rem;
+                    text-decoration: none;
+                    overflow: hidden;
                 }
+
+            }
+
+            #botonHamburguesa {
+                padding: 0;
+
+                .container-fluid {
+                    padding: 0;
+
+                    a {
+                        font-size: 1.5rem;
+                    }
+
+                    .navbar-toggler {
+                        border: 0;
+                        user-select: none;
+                        padding: 0;
+                    }
+
+                    #offcanvasNavbar {
+                        @include flex(column, stretch, flex-start);
+                        width: 50%;
+                        background: linear-gradient(to left, rgb(212, 118, 118), transparent);
+                        border: 0;
+
+                        .ulMobile {
+                            padding: 0%;
+                            height: 50%;
+
+                            @include flex(column, center, space-around);
+
+                            li {
+                                a {
+                                    color: #ffffff;
+                                    text-decoration: none;
+                                    text-shadow: 1px 1px 1px black;
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -172,32 +231,36 @@
 
     //navbar
     header {
-        background: linear-gradient(to bottom, #DEB986, transparent);
+        height: 10vh;
 
         nav {
-            #navMobile {
+            margin: 0% 8% 0% 8%;
+
+            #botonHamburguesa {
                 display: none;
+            }
+
+            h1 {
+                height: 10vh;
+
+                a {
+                    font-size: 1.4rem;
+                    margin: 0;
+                }
+
+                a:hover {
+                    color: #9b003b;
+                }
             }
 
             .navTabletAndDesktop {
                 display: flex;
                 justify-content: space-between;
                 height: 10vh;
-                margin: 0% 8% 0% 8%;
-
-
-                h1 {
-                    a {
-                        font-size: 1.4rem;
-                        margin: 0;
-                    }
-
-                    a:hover {
-                        color: #9b003b;
-                    }
-                }
 
                 .ulTabletAndDesktop {
+                    position: relative;
+                    top: 3px;
                     margin: 0;
 
                     li {
@@ -212,7 +275,6 @@
                 }
             }
         }
-
     }
 
     //footer
@@ -425,31 +487,36 @@
     //navbar
 
     header {
+        height: 15vh;
+
         nav {
+            height: 15vh;
+
+            h1 {
+                height: 15vh;
+
+                a {
+                    font-size: 2rem;
+                }
+            }
+
             .navTabletAndDesktop {
                 height: 15vh;
 
-                h1 {
-                    a {
-                        font-size: 1.7rem;
-                    }
-                }
-
                 .ulTabletAndDesktop {
-                    width: 500px;
-                    margin: 0;
+                    top: 2px;
+                    width: 520px;
 
                     li {
                         a {
-                            font-size: 1.3rem;
+                            font-size: 1.4rem;
                         }
                     }
                 }
-
             }
         }
-
     }
+
 
     //footer
 
@@ -708,21 +775,23 @@
 @media screen and (min-width: 1400px) {
 
     //navbar
-
     header {
+
         nav {
-            .navTabletAndDesktop {
-                h1 {
-                    a {
-                        position: relative;
-                        bottom: 3px;
-                        font-size: 2.5rem;
-                    }
+
+            h1 {
+
+                a {
+                    font-size: 2.5rem;
                 }
+            }
+
+            .navTabletAndDesktop {
 
                 .ulTabletAndDesktop {
+                    top: 5px;
+
                     width: 700px;
-                    margin: 0;
 
                     li {
                         a {
@@ -730,11 +799,11 @@
                         }
                     }
                 }
-
             }
         }
-
     }
+
+
 
     //footer
 

@@ -60,14 +60,25 @@
 
 header {
   font-size: 1.2rem;
+  width: 100%;
+  background: linear-gradient(to bottom, #DEB986, transparent);
+  height: 60px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin: 0% 5% 0% 5%;
 }
 header nav h1 {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
   justify-content: flex-start;
-  margin-bottom: 0;
-  overflow: hidden;
+  height: 50px;
+  margin: 0;
 }
 header nav h1 a {
   white-space: nowrap;
@@ -76,22 +87,18 @@ header nav h1 a {
   text-decoration: none;
   overflow: hidden;
 }
-header nav .container-fluid .navbar-toggler {
+header nav #botonHamburguesa {
+  padding: 0;
+}
+header nav #botonHamburguesa .container-fluid {
+  padding: 0;
+}
+header nav #botonHamburguesa .container-fluid .navbar-toggler {
   border: 0;
   user-select: none;
   padding: 0;
 }
-header nav #navMobile {
-  justify-content: space-between;
-  width: 100%;
-  background: linear-gradient(to bottom, #DEB986, transparent);
-  height: 50px;
-}
-header nav #navMobile .container-fluid {
-  margin: 0% 5% 0% 5%;
-  padding: 0;
-}
-header nav #navMobile #offcanvasNavbar {
+header nav #botonHamburguesa .container-fluid #offcanvasNavbar {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -100,7 +107,7 @@ header nav #navMobile #offcanvasNavbar {
   background: linear-gradient(to left, rgb(212, 118, 118), transparent);
   border: 0;
 }
-header nav #navMobile #offcanvasNavbar .ulMobile {
+header nav #botonHamburguesa .container-fluid #offcanvasNavbar .ulMobile {
   padding: 0%;
   height: 50%;
   display: flex;
@@ -108,27 +115,22 @@ header nav #navMobile #offcanvasNavbar .ulMobile {
   align-items: center;
   justify-content: space-around;
 }
-header nav #navMobile #offcanvasNavbar .ulMobile li a {
+header nav #botonHamburguesa .container-fluid #offcanvasNavbar .ulMobile li a {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
 }
-header nav .navTabletAndDesktop {
-  height: 15vh;
+header .navTabletAndDesktop {
   display: none;
-  align-items: center;
-  justify-content: space-between;
 }
-header nav .navTabletAndDesktop .ulTabletAndDesktop {
+header .navTabletAndDesktop .ulTabletAndDesktop {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
-  position: relative;
-  top: 3px;
   width: 390px;
 }
-header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
+header .navTabletAndDesktop .ulTabletAndDesktop li a {
   color: #7a163c;
   text-decoration: none;
 }
@@ -419,8 +421,69 @@ footer .copyright {
 }
 
 @media screen and (min-width: 520px) {
-  header #navMobile .container-fluid a {
+  header {
+    font-size: 1.2rem;
+    width: 100%;
+    background: linear-gradient(to bottom, #DEB986, transparent);
+    height: 60px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin: 0% 5% 0% 5%;
+  }
+  header nav h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+  }
+  header nav h1 a {
+    white-space: nowrap;
+    color: #7a163c;
     font-size: 1.5rem;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  header nav #botonHamburguesa {
+    padding: 0;
+  }
+  header nav #botonHamburguesa .container-fluid {
+    padding: 0;
+  }
+  header nav #botonHamburguesa .container-fluid a {
+    font-size: 1.5rem;
+  }
+  header nav #botonHamburguesa .container-fluid .navbar-toggler {
+    border: 0;
+    user-select: none;
+    padding: 0;
+  }
+  header nav #botonHamburguesa .container-fluid #offcanvasNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 50%;
+    background: linear-gradient(to left, rgb(212, 118, 118), transparent);
+    border: 0;
+  }
+  header nav #botonHamburguesa .container-fluid #offcanvasNavbar .ulMobile {
+    padding: 0%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header nav #botonHamburguesa .container-fluid #offcanvasNavbar .ulMobile li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
   }
   .footer {
     font-size: 1rem;
@@ -494,25 +557,32 @@ footer .copyright {
 }
 @media screen and (min-width: 768px) {
   header {
-    background: linear-gradient(to bottom, #DEB986, transparent);
+    height: 10vh;
   }
-  header nav #navMobile {
+  header nav {
+    margin: 0% 8% 0% 8%;
+  }
+  header nav #botonHamburguesa {
     display: none;
+  }
+  header nav h1 {
+    height: 10vh;
+  }
+  header nav h1 a {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  header nav h1 a:hover {
+    color: #9b003b;
   }
   header nav .navTabletAndDesktop {
     display: flex;
     justify-content: space-between;
     height: 10vh;
-    margin: 0% 8% 0% 8%;
-  }
-  header nav .navTabletAndDesktop h1 a {
-    font-size: 1.4rem;
-    margin: 0;
-  }
-  header nav .navTabletAndDesktop h1 a:hover {
-    color: #9b003b;
   }
   header nav .navTabletAndDesktop .ulTabletAndDesktop {
+    position: relative;
+    top: 3px;
     margin: 0;
   }
   header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
@@ -632,18 +702,27 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 1024px) {
+  header {
+    height: 15vh;
+  }
+  header nav {
+    height: 15vh;
+  }
+  header nav h1 {
+    height: 15vh;
+  }
+  header nav h1 a {
+    font-size: 2rem;
+  }
   header nav .navTabletAndDesktop {
     height: 15vh;
   }
-  header nav .navTabletAndDesktop h1 a {
-    font-size: 1.7rem;
-  }
   header nav .navTabletAndDesktop .ulTabletAndDesktop {
-    width: 500px;
-    margin: 0;
+    top: 2px;
+    width: 520px;
   }
   header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .mainIndex .fundamentos #carouselExampleCaptions {
     display: none;
@@ -806,14 +885,12 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 1400px) {
-  header nav .navTabletAndDesktop h1 a {
-    position: relative;
-    bottom: 3px;
+  header nav h1 a {
     font-size: 2.5rem;
   }
   header nav .navTabletAndDesktop .ulTabletAndDesktop {
+    top: 5px;
     width: 700px;
-    margin: 0;
   }
   header nav .navTabletAndDesktop .ulTabletAndDesktop li a {
     font-size: 1.8rem;
