@@ -232,6 +232,9 @@ footer .copyright {
 }
 .mainIndex .fundamentos #carouselExampleCaptions {
   margin: 3% 5% 8% 5%;
+  box-shadow: 9px 10px 31px 11px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 10px 31px 11px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 10px 31px 11px rgba(0, 0, 0, 0.7);
 }
 .mainIndex .fundamentos #carouselExampleCaptions .card {
   background-color: rgba(255, 255, 255, 0.5);
